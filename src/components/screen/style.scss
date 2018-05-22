@@ -1,0 +1,42 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+._ni-form {
+  background: #fdfdfd;
+  width: 500px;
+  max-width: 95%;
+  margin: 50px auto 0;
+  padding: 20px 50px;
+  border: 1px solid #d1d5da;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: .25s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+
+  ._ni-header {
+    h1, h2 {
+      text-align: center;
+      margin: 0;
+      font-weight: 400;
+      color: #24292e;
+    }
+  }
+}
+
+._ni-form._ni-loading {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: .25s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}

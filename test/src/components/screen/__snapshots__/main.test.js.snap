@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main - missing parameters should not render if owner or repo is missing or invalid 1`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`Main - missing parameters should not render if owner or repo is missing or invalid 2`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`Main - missing parameters should not render if owner or repo is missing or invalid 3`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`Main - missing parameters should not render if owner or repo is missing or invalid 4`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`Main should render and function correctly for developit/preact-cli 1`] = `
+preact-render-spy (1 nodes)
+-------
+<form
+  class="ni-form _ni-form"
+  onSubmit={[Function onSubmit]}
+>
+  <header class="ni-header _ni-header">
+    <h1 class="ni-heading _ni-heading">
+      <a
+        class="ni-repo-link _ni-repo-link"
+        href="https://github.com/developit"
+        target="_blank"
+      >
+        developit
+      </a>
+      <span>/</span>
+      <a
+        class="ni-repo-link _ni-repo-link"
+        href="https://github.com/developit/preact-cli"
+        target="_blank"
+      >
+        <strong>preact-cli</strong>
+      </a>
+    </h1>
+  </header>
+  <section class="ni-title-inputs">
+    <div class="ni-wrapper ni-wrapper-html _ni-wrapper _ni-wrapper-html">
+      <label class="ni-label _ni-label ni-empty-label"></label>
+      <div class="ni-input ni-html _ni-input _ni-html">
+        <p>Before creating an issue please make sure you are using the latest version of preact-cli.</p>
+      </div>
+    </div>
+    <div class="ni-wrapper ni-wrapper-hidden _ni-wrapper _ni-wrapper-hidden">
+      <label class="ni-label _ni-label ni-empty-label"></label>
+      <input
+        type="hidden"
+        class="ni-input ni-hidden _ni-input _ni-hidden"
+        value="["
+        onInput={[Function anonymous]}
+       />
+    </div>
+    <div class="ni-wrapper ni-wrapper-select _ni-wrapper _ni-wrapper-select">
+      <label class="ni-label _ni-label">Type</label>
+      <select
+        class="ni-input ni-select _ni-input _ni-select"
+        title="Select your issue type"
+        required={true}
+        placeholder="-- Issue Type --"
+        onInput={[Function anonymous]}
+      >
+        <option
+          value=""
+          selected={true}
+        >
+          -- Issue Type --
+        </option>
+        <option
+          value="feature"
+          selected={false}
+        >
+          feature
+        </option>
+        <option
+          value="bug"
+          selected={false}
+        >
+          bug
+        </option>
+      </select>
+    </div>
+    <div class="ni-wrapper ni-wrapper-hidden _ni-wrapper _ni-wrapper-hidden">
+      <label class="ni-label _ni-label ni-empty-label"></label>
+      <input
+        type="hidden"
+        class="ni-input ni-hidden _ni-input _ni-hidden"
+        value="] "
+        onInput={[Function anonymous]}
+       />
+    </div>
+    <div class="ni-wrapper ni-wrapper-text _ni-wrapper _ni-wrapper-text ni-block-wrapper">
+      <label class="ni-label _ni-label">Title</label>
+      <input
+        type="text"
+        class="ni-input ni-text _ni-input _ni-text ni-block"
+        required={true}
+        value=""
+        onInput={[Function anonymous]}
+       />
+    </div>
+  </section>
+  <section class="ni-body-inputs">
+    <div class="ni-wrapper ni-wrapper-textarea _ni-wrapper _ni-wrapper-textarea ni-block-wrapper">
+      <label class="ni-label _ni-label">What is the current behavior?</label>
+      <textarea
+        class="ni-input ni-textarea _ni-input _ni-textarea ni-block"
+        rows={4}
+        value=""
+        onInput={[Function anonymous]}
+      >
+      </textarea>
+    </div>
+    <div class="ni-wrapper ni-wrapper-textarea _ni-wrapper _ni-wrapper-textarea ni-block-wrapper">
+      <label class="ni-label _ni-label">Steps to reproduce (if bug)</label>
+      <textarea
+        class="ni-input ni-textarea _ni-input _ni-textarea ni-block"
+        title="A great way to do this is to provide your configuration via a GitHub gist"
+        rows={4}
+        value=""
+        onInput={[Function anonymous]}
+      >
+      </textarea>
+    </div>
+    <div class="ni-wrapper ni-wrapper-textarea _ni-wrapper _ni-wrapper-textarea ni-block-wrapper">
+      <label class="ni-label _ni-label">What is the expected behavior?</label>
+      <textarea
+        class="ni-input ni-textarea _ni-input _ni-textarea ni-block"
+        rows={4}
+        value=""
+        onInput={[Function anonymous]}
+      >
+      </textarea>
+    </div>
+    <div class="ni-wrapper ni-wrapper-textarea _ni-wrapper _ni-wrapper-textarea ni-block-wrapper">
+      <label class="ni-label _ni-label">
+        Motivation or use case for changing the behaviour (if feature)
+      </label>
+      <textarea
+        class="ni-input ni-textarea _ni-input _ni-textarea ni-block"
+        rows={4}
+        value=""
+        onInput={[Function anonymous]}
+      >
+      </textarea>
+    </div>
+    <div class="ni-wrapper ni-wrapper-textarea _ni-wrapper _ni-wrapper-textarea ni-block-wrapper">
+      <label class="ni-label _ni-label">Other relevant information</label>
+      <textarea
+        class="ni-input ni-textarea _ni-input _ni-textarea ni-block"
+        rows={5}
+        placeholder="- Node version
+      - npm version
+      - Operating system
+      - CLI version
+      - Browser"
+        value="- Node version
+      - npm version
+      - Operating system
+      - CLI version
+      - Browser"
+        onInput={[Function anonymous]}
+      >
+      </textarea>
+    </div>
+    <div class="ni-wrapper ni-wrapper-submit _ni-wrapper _ni-wrapper-submit">
+      <label class="ni-label _ni-label ni-empty-label"></label>
+      <button
+        type="submit"
+        class="ni-input ni-submit _ni-input _ni-submit"
+      >Continue
+      </button>
+    </div>
+  </section>
+</form>
+
+`;
+
+exports[`Main should render and function correctly for test/test-1 1`] = `
+preact-render-spy (1 nodes)
+-------
+<form
+  class="ni-form _ni-form"
+  onSubmit={[Function onSubmit]}
+>
+  <header class="ni-header _ni-header ni-custom-header">
+    <h1>Custom Fields, One Title Field, No Body</h1>
+  </header>
+  <section class="ni-title-inputs">
+    <div class="ni-wrapper ni-wrapper-text _ni-wrapper _ni-wrapper-text ni-block-wrapper">
+      <label class="ni-label _ni-label">Title</label>
+      <input
+        type="text"
+        class="ni-input ni-text _ni-input _ni-text ni-block"
+        required={true}
+        value=""
+        onInput={[Function anonymous]}
+       />
+    </div>
+  </section>
+  <section class="ni-body-inputs">
+    <div class="ni-wrapper ni-wrapper-submit _ni-wrapper _ni-wrapper-submit">
+      <label class="ni-label _ni-label ni-empty-label"></label>
+      <button
+        type="submit"
+        class="ni-input ni-submit _ni-input _ni-submit"
+      >Submit
+      </button>
+    </div>
+  </section>
+  <footer class="ni-footer _ni-footer ni-custom-footer">
+    <p>Custom Footer</p>
+  </footer>
+  <style class="ni-custom-css">html { background: #fff }</style>
+  <script class="ni-custom-js">console.log(window.location.href)</script>
+</form>
+
+`;

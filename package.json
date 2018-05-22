@@ -1,0 +1,104 @@
+{
+  "name": "new-issue",
+  "version": "0.1.0",
+  "description": "A customizable Github issues interface",
+  "scripts": {
+    "test": "NODE_ENV=test jest --verbose",
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build --no-prerender --clean --template src/index.ejs --service-worker false",
+    "serve": "npm run build && preact serve",
+    "dev": "preact watch --template src/index.ejs",
+    "lint": "eslint ./*/ --ext .js,.json --ignore-path .gitignore",
+    "lintfix": "eslint ./*/ --ext .js,.json --ignore-path .gitignore --fix || true"
+  },
+  "author": "Wei He <github@weispot.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-preact": "^1.1.6",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-standard": "^3.1.0",
+    "glob": "^7.1.2",
+    "identity-obj-proxy": "^3.0.0",
+    "if-env": "^1.0.4",
+    "jest": "^22.4.4",
+    "jest-localstorage-mock": "^2.2.0",
+    "jsdom": "^11.10.0",
+    "node-sass": "^4.9.0",
+    "preact-cli": "^2.2.1",
+    "preact-render-spy": "^1.3.0",
+    "preact-render-to-string": "^3.7.0",
+    "preact-widget-scripts": "^0.6.0",
+    "sass-loader": "^7.0.1"
+  },
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "classnames": "^2.2.5",
+    "linkstate": "^1.1.1",
+    "netlify-auth-providers": "^1.0.0-alpha5",
+    "normalize.css": "^8.0.0",
+    "preact": "^8.2.9",
+    "preact-compat": "^3.18.0",
+    "preact-habitat": "^3.2.1",
+    "preact-router": "^2.6.1",
+    "primer": "^10.5.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss|less)$": "identity-obj-proxy",
+      "^react$": "preact-compat",
+      "^react-dom$": "preact-compat"
+    },
+    "snapshotSerializers": [
+      "preact-render-spy/snapshot"
+    ],
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 70,
+        "lines": 80,
+        "statements": 80
+      }
+    },
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
+  "eslintConfig": {
+    "plugins": [
+      "json"
+    ],
+    "extends": [
+      "standard",
+      "standard-preact"
+    ],
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ]
+    }
+  }
+}

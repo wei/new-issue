@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "input": {
+    "title": [
+      {
+        "type": "html",
+        "html": "<p>ESLint adheres to the <a href='https://js.foundation/community/code-of-conduct' target='_blank'>JS Foundation Code of Conduct</a>.</p><p>This template is for requesting a rule change. If you are here for another reason, please see below:</p><p>1. To report a bug: <a href='/wei/eslint/bug'>click here</a><br/>2. To propose a new rule: <a href='/wei/eslint/new-rule'>click here</a><br/>3. To request a change that is not a bug fix, rule change, or new rule: <a href='/wei/eslint/change'>click here</a><br/>4. If you have any questions, please stop by our <a href='https://gitter.im/eslint/eslint' target='_blank'>chatroom</a>.</p><p>Note that leaving sections blank will make it difficult for us to troubleshoot and we may have to close the issue.</p>"
+      },
+      {
+        "type": "hidden",
+        "value": "[RULE_CHANGE] "
+      },
+      {
+        "type": "text",
+        "required": true,
+        "class": "ni-block",
+        "label": "Title"
+      }
+    ],
+    "body": [
+      {
+        "type": "text",
+        "required": true,
+        "class": "ni-block",
+        "label": "What rule do you want to change:"
+      },
+      {
+        "type": "text",
+        "required": true,
+        "class": "ni-block",
+        "label": "Does this change cause the rule to produce more or fewer warnings?"
+      },
+      {
+        "type": "textarea",
+        "required": true,
+        "class": "ni-block",
+        "label": "How will the change be implemented? (New option, new default behavior, etc.)?",
+        "rows": 4
+      },
+      {
+        "type": "textarea",
+        "required": true,
+        "class": "ni-block",
+        "label": "Please provide some example code that this change will affect:",
+        "rows": 10,
+        "value": "<!-- Put your code examples here -->\n```js\n\n```"
+      },
+      {
+        "type": "text",
+        "required": true,
+        "class": "ni-block",
+        "label": "What does the rule currently do for this code?"
+      },
+      {
+        "type": "text",
+        "required": true,
+        "class": "ni-block",
+        "label": "What will the rule do after it's changed?"
+      },
+      {
+        "type": "submit",
+        "submit": "Continue"
+      }
+    ]
+  },
+  "output": {
+    "hideEmpty": false
+  }
+}

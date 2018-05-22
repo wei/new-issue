@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IssueLoading - missing parameters should not render if owner or repo is missing or invalid 1`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`IssueLoading - missing parameters should not render if owner or repo is missing or invalid 2`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`IssueLoading - missing parameters should not render if owner or repo is missing or invalid 3`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`IssueLoading - missing parameters should not render if owner or repo is missing or invalid 4`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`IssueLoading should render and function correctly for developit/preact-cli 1`] = `
+preact-render-spy (1 nodes)
+-------
+<form
+  class="ni-form _ni-form ni-loading _ni-loading"
+  onSubmit={[Function onSubmit]}
+>
+  <br />
+  <br />
+  <br />
+  <header class="ni-header _ni-header">
+    <Heading
+      config={
+        Object {
+          "owner": "developit",
+          "repo": "preact-cli"
+        }
+      }
+    >
+    </Heading>
+  </header>
+  <br />
+  <br />
+  <footer class="ni-footer _ni-footer text-center">
+    <Input
+      config={
+        Object {
+          "disabled": true,
+          "submit": "Loading...",
+          "type": "submit"
+        }
+      }
+    >
+    </Input>
+  </footer>
+  <br />
+</form>
+
+`;
+
+exports[`IssueLoading should render and function correctly for developit/preact-cli 2`] = `
+preact-render-spy (1 nodes)
+-------
+<form
+  class="ni-form _ni-form ni-loading _ni-loading"
+  onSubmit={[Function onSubmit]}
+>
+  <br />
+  <br />
+  <br />
+  <header class="ni-header _ni-header">
+    <Heading
+      config={
+        Object {
+          "owner": "developit",
+          "repo": "preact-cli"
+        }
+      }
+    >
+    </Heading>
+  </header>
+  <br />
+  <br />
+  <footer class="ni-footer _ni-footer text-center">
+    <Input
+      config={
+        Object {
+          "disabled": false,
+          "submit": "New Issue",
+          "type": "submit"
+        }
+      }
+    >
+    </Input>
+  </footer>
+  <br />
+</form>
+
+`;
+
+exports[`IssueLoading should render and function correctly for test/test-1 1`] = `
+preact-render-spy (1 nodes)
+-------
+<form
+  class="ni-form _ni-form ni-loading _ni-loading"
+  onSubmit={[Function onSubmit]}
+>
+  <br />
+  <br />
+  <br />
+  <header class="ni-header _ni-header">
+    <Heading
+      config={
+        Object {
+          "owner": "test",
+          "repo": "test-1"
+        }
+      }
+    >
+    </Heading>
+  </header>
+  <br />
+  <br />
+  <footer class="ni-footer _ni-footer text-center">
+    <Input
+      config={
+        Object {
+          "disabled": true,
+          "submit": "Loading...",
+          "type": "submit"
+        }
+      }
+    >
+    </Input>
+  </footer>
+  <br />
+</form>
+
+`;
+
+exports[`IssueLoading should render and function correctly for test/test-1 2`] = `
+preact-render-spy (1 nodes)
+-------
+<form
+  class="ni-form _ni-form ni-loading _ni-loading"
+  onSubmit={[Function onSubmit]}
+>
+  <br />
+  <br />
+  <br />
+  <header class="ni-header _ni-header">
+    <Heading
+      config={
+        Object {
+          "owner": "test",
+          "repo": "test-1"
+        }
+      }
+    >
+    </Heading>
+  </header>
+  <br />
+  <br />
+  <footer class="ni-footer _ni-footer text-center">
+    <Input
+      config={
+        Object {
+          "disabled": false,
+          "submit": "New Issue",
+          "type": "submit"
+        }
+      }
+    >
+    </Input>
+  </footer>
+  <br />
+</form>
+
+`;

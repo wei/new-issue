@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "theme": "default",
+  "input": {
+    "customHeader": "<h1>Custom Fields, One Title Field, No Body</h1>",
+    "customFooter": "<p>Custom Footer</p>",
+    "customJS": "console.log(window.location.href)",
+    "customCSS": "html { background: #fff }",
+    "title": [
+      {
+        "type": "text",
+        "required": true,
+        "class": "ni-block",
+        "label": "Title"
+      }
+    ],
+    "body": [
+    ]
+  },
+  "output": {
+    "hideEmpty": true
+  }
+}

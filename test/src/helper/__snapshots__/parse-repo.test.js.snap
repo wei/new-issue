@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse repo from url pathname should parse /owner/repo correctly 1`] = `
+Object {
+  "configPaths": Array [
+    "/name/repo/master/.new-issue",
+    "/name/repo/master/.new-issue/index.json",
+    "/wei/new-issue/master/repos/name/index.json",
+    "/wei/new-issue/master/repos/name/repo/index.json",
+  ],
+  "hash": undefined,
+  "owner": "name",
+  "repo": "repo",
+  "type": undefined,
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo correctly 2`] = `
+Object {
+  "configPaths": Array [
+    "/1/2/master/.new-issue",
+    "/1/2/master/.new-issue/index.json",
+    "/wei/new-issue/master/repos/1/index.json",
+    "/wei/new-issue/master/repos/1/2/index.json",
+  ],
+  "hash": undefined,
+  "owner": "1",
+  "repo": "2",
+  "type": undefined,
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo correctly 3`] = `
+Object {
+  "configPaths": Array [
+    "/1.1/2.2/master/.new-issue",
+    "/1.1/2.2/master/.new-issue/index.json",
+    "/wei/new-issue/master/repos/1.1/index.json",
+    "/wei/new-issue/master/repos/1.1/2.2/index.json",
+  ],
+  "hash": undefined,
+  "owner": "1.1",
+  "repo": "2.2",
+  "type": undefined,
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo correctly 4`] = `
+Object {
+  "configPaths": Array [
+    "/n__+/-__r/master/.new-issue",
+    "/n__+/-__r/master/.new-issue/index.json",
+    "/wei/new-issue/master/repos/n__+/index.json",
+    "/wei/new-issue/master/repos/n__+/-__r/index.json",
+  ],
+  "hash": undefined,
+  "owner": "n__+",
+  "repo": "-__r",
+  "type": undefined,
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo#hash correctly 1`] = `
+Object {
+  "configPaths": Array [
+    "/name/repo/master/.new-issue",
+    "/name/repo/master/.new-issue/index.json",
+    "/wei/new-issue/master/repos/name/index.json",
+    "/wei/new-issue/master/repos/name/repo/index.json",
+  ],
+  "hash": undefined,
+  "owner": "name",
+  "repo": "repo",
+  "type": undefined,
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo#hash correctly 2`] = `
+Object {
+  "configPaths": Array [
+    "/1/2/master/.new-issue",
+    "/1/2/master/.new-issue/index.json",
+    "/wei/new-issue/master/repos/1/index.json",
+    "/wei/new-issue/master/repos/1/2/index.json",
+  ],
+  "hash": undefined,
+  "owner": "1",
+  "repo": "2",
+  "type": undefined,
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo#hash correctly 3`] = `
+Object {
+  "configPaths": Array [
+    "/1.1/2.2/master/.new-issue",
+    "/1.1/2.2/master/.new-issue/index.json",
+    "/wei/new-issue/master/repos/1.1/index.json",
+    "/wei/new-issue/master/repos/1.1/2.2/index.json",
+  ],
+  "hash": undefined,
+  "owner": "1.1",
+  "repo": "2.2",
+  "type": undefined,
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo#hash correctly 4`] = `
+Object {
+  "configPaths": Array [
+    "/n__+/-__r/master/.new-issue",
+    "/n__+/-__r/master/.new-issue/index.json",
+    "/wei/new-issue/master/repos/n__+/index.json",
+    "/wei/new-issue/master/repos/n__+/-__r/index.json",
+  ],
+  "hash": undefined,
+  "owner": "n__+",
+  "repo": "-__r",
+  "type": undefined,
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo/type correctly 1`] = `
+Object {
+  "configPaths": Array [
+    "/name/repo/master/.new-issue",
+    "/name/repo/master/.new-issue/type.json",
+    "/wei/new-issue/master/repos/name/index.json",
+    "/wei/new-issue/master/repos/name/repo/type.json",
+  ],
+  "hash": undefined,
+  "owner": "name",
+  "repo": "repo",
+  "type": "type",
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo/type correctly 2`] = `
+Object {
+  "configPaths": Array [
+    "/1/2/master/.new-issue",
+    "/1/2/master/.new-issue/3.json",
+    "/wei/new-issue/master/repos/1/index.json",
+    "/wei/new-issue/master/repos/1/2/3.json",
+  ],
+  "hash": undefined,
+  "owner": "1",
+  "repo": "2",
+  "type": "3",
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo/type correctly 3`] = `
+Object {
+  "configPaths": Array [
+    "/1.1/2.2/master/.new-issue",
+    "/1.1/2.2/master/.new-issue/3.3.json",
+    "/wei/new-issue/master/repos/1.1/index.json",
+    "/wei/new-issue/master/repos/1.1/2.2/3.3.json",
+  ],
+  "hash": undefined,
+  "owner": "1.1",
+  "repo": "2.2",
+  "type": "3.3",
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo/type correctly 4`] = `
+Object {
+  "configPaths": Array [
+    "/n__+/-__r/master/.new-issue",
+    "/n__+/-__r/master/.new-issue/_---_.json",
+    "/wei/new-issue/master/repos/n__+/index.json",
+    "/wei/new-issue/master/repos/n__+/-__r/_---_.json",
+  ],
+  "hash": undefined,
+  "owner": "n__+",
+  "repo": "-__r",
+  "type": "_---_",
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo/type#hash correctly 1`] = `
+Object {
+  "configPaths": Array [
+    "/name/repo/master/.new-issue",
+    "/name/repo/master/.new-issue/type.json",
+    "/wei/new-issue/master/repos/name/index.json",
+    "/wei/new-issue/master/repos/name/repo/type.json",
+    "/name/repo/1a2b3c/.new-issue",
+    "/name/repo/1a2b3c/.new-issue/type.json",
+    "/wei/new-issue/1a2b3c/repos/name/index.json",
+    "/wei/new-issue/1a2b3c/repos/name/repo/type.json",
+  ],
+  "hash": "1a2b3c",
+  "owner": "name",
+  "repo": "repo",
+  "type": "type",
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo/type#hash correctly 2`] = `
+Object {
+  "configPaths": Array [
+    "/1/2/master/.new-issue",
+    "/1/2/master/.new-issue/3.json",
+    "/wei/new-issue/master/repos/1/index.json",
+    "/wei/new-issue/master/repos/1/2/3.json",
+    "/1/2/1a2b3c/.new-issue",
+    "/1/2/1a2b3c/.new-issue/3.json",
+    "/wei/new-issue/1a2b3c/repos/1/index.json",
+    "/wei/new-issue/1a2b3c/repos/1/2/3.json",
+  ],
+  "hash": "1a2b3c",
+  "owner": "1",
+  "repo": "2",
+  "type": "3",
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo/type#hash correctly 3`] = `
+Object {
+  "configPaths": Array [
+    "/1.1/2.2/master/.new-issue",
+    "/1.1/2.2/master/.new-issue/3.3.json",
+    "/wei/new-issue/master/repos/1.1/index.json",
+    "/wei/new-issue/master/repos/1.1/2.2/3.3.json",
+    "/1.1/2.2/1a2b3c/.new-issue",
+    "/1.1/2.2/1a2b3c/.new-issue/3.3.json",
+    "/wei/new-issue/1a2b3c/repos/1.1/index.json",
+    "/wei/new-issue/1a2b3c/repos/1.1/2.2/3.3.json",
+  ],
+  "hash": "1a2b3c",
+  "owner": "1.1",
+  "repo": "2.2",
+  "type": "3.3",
+}
+`;
+
+exports[`parse repo from url pathname should parse /owner/repo/type#hash correctly 4`] = `
+Object {
+  "configPaths": Array [
+    "/n__+/-__r/master/.new-issue",
+    "/n__+/-__r/master/.new-issue/_---_.json",
+    "/wei/new-issue/master/repos/n__+/index.json",
+    "/wei/new-issue/master/repos/n__+/-__r/_---_.json",
+    "/n__+/-__r/1a2b3c/.new-issue",
+    "/n__+/-__r/1a2b3c/.new-issue/_---_.json",
+    "/wei/new-issue/1a2b3c/repos/n__+/index.json",
+    "/wei/new-issue/1a2b3c/repos/n__+/-__r/_---_.json",
+  ],
+  "hash": "1a2b3c",
+  "owner": "n__+",
+  "repo": "-__r",
+  "type": "_---_",
+}
+`;

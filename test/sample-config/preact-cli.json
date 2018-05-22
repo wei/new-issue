@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "theme": "default",
+  "input": {
+    "title": [
+      {
+        "type": "html",
+        "html": "<p>Before creating an issue please make sure you are using the latest version of preact-cli.</p>"
+      },
+      {
+        "type": "hidden",
+        "value": "["
+      },
+      {
+        "type": "select",
+        "required": true,
+        "label": "Type",
+        "title": "Select your issue type",
+        "placeholder": "-- Issue Type --",
+        "value": "",
+        "options": [
+          "feature",
+          "bug"
+        ]
+      },
+      {
+        "type": "hidden",
+        "value": "] "
+      },
+      {
+        "type": "text",
+        "required": true,
+        "class": "ni-block",
+        "label": "Title"
+      }
+    ],
+    "body": [
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "What is the current behavior?",
+        "outputLabel.md": "**Current Behavior:**\n"
+      },
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "Steps to reproduce (if bug)",
+        "outputLabel.md": "**Steps to reproduce:**\n",
+        "title": "A great way to do this is to provide your configuration via a GitHub gist"
+      },
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "What is the expected behavior?",
+        "outputLabel.md": "**Expected Behavior:**\n"
+      },
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "Motivation or use case for changing the behaviour (if feature)",
+        "outputLabel.md": "**Motivation / Use case:**\n"
+      },
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "Other relevant information",
+        "rows": 5,
+        "outputLabel.md": "**Other relevant information:**\n",
+        "placeholder": "- Node version\n- npm version\n- Operating system\n- CLI version\n- Browser",
+        "value": "- Node version\n- npm version\n- Operating system\n- CLI version\n- Browser"
+      },
+      {
+        "type": "submit",
+        "submit": "Continue"
+      }
+    ]
+  },
+  "output": {
+    "hideEmpty": false
+  }
+}

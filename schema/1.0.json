@@ -1,0 +1,335 @@
+{
+  "$id": "https://raw.githubusercontent.com/wei/new-issue/master/schema/1.0.json",
+  "type": "object",
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "version": {
+      "type": "string",
+      "title": "new-issue schema version",
+      "pattern": "^1\\.0$"
+    },
+    "theme": {
+      "type": "string",
+      "default": "default",
+      "examples": [
+        "default"
+      ]
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "favicon": {
+          "type": "string",
+          "description": "favicon https absolute url",
+          "pattern": "^https:.+\\.(?:ico|gif|png|jpg)$"
+        },
+        "pageTitle": {
+          "type": "string",
+          "description": "page title"
+        },
+        "heading": {
+          "type": "string"
+        },
+        "customHeader": {
+          "type": "string",
+          "description": "Header html, overwrites heading"
+        },
+        "customFooter": {
+          "type": "string",
+          "description": "Footer html"
+        },
+        "customJS": {
+          "type": "string",
+          "description": "Do not include <script> tags",
+          "pattern": "^(?!\\s*<script).*"
+        },
+        "customCSS": {
+          "type": "string",
+          "description": "Do not include <style> tags",
+          "pattern": "^(?!\\s*<style).*"
+        }
+      },
+      "patternProperties": {
+        "^(title|body)$": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["text", "number", "password", "email", "month", "date", "datetime-local", "hidden"]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "class": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "outputLabel.md": {
+                    "type": "string",
+                    "title": "outputLabel.md",
+                    "description": "Label used for output"
+                  },
+                  "placeholder": {
+                    "type": "string"
+                  },
+                  "required": {
+                    "type": "boolean"
+                  },
+                  "disabled": {
+                    "type": "boolean"
+                  },
+                  "pattern": {
+                    "type": "string",
+                    "examples": [
+                      "(\\d+\\.)+\\.\\d+"
+                    ]
+                  },
+                  "maxlength": {
+                    "type": "integer",
+                    "default": null
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": ["type"]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["textarea"]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "class": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "outputLabel.md": {
+                    "type": "string",
+                    "title": "outputLabel.md",
+                    "description": "Label used for output"
+                  },
+                  "placeholder": {
+                    "type": "string"
+                  },
+                  "required": {
+                    "type": "boolean"
+                  },
+                  "disabled": {
+                    "type": "boolean"
+                  },
+                  "rows": {
+                    "type": "integer",
+                    "default": 4
+                  },
+                  "maxlength": {
+                    "type": "integer",
+                    "default": null
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": ["type"]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["select"]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "class": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "outputLabel.md": {
+                    "type": "string",
+                    "title": "outputLabel.md",
+                    "description": "Label used for output"
+                  },
+                  "placeholder": {
+                    "type": "string",
+                    "examples": [
+                      "-- Issue Type --"
+                    ]
+                  },
+                  "required": {
+                    "type": "boolean"
+                  },
+                  "disabled": {
+                    "type": "boolean"
+                  },
+                  "value": {
+                    "type": "string"
+                  },
+                  "options": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "examples": [
+                        "feature",
+                        "bug"
+                      ]
+                    }
+                  }
+                },
+                "required": ["type", "options"]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["submit"]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "class": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "outputLabel.md": {
+                    "type": "string",
+                    "title": "outputLabel.md",
+                    "description": "Label used for output"
+                  },
+                  "disabled": {
+                    "type": "boolean"
+                  },
+                  "submit": {
+                    "type": "string",
+                    "default": "Submit",
+                    "examples": [
+                      "Submit",
+                      "Continue"
+                    ]
+                  }
+                },
+                "required": ["type"]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [ "html" ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "class": {
+                    "type": "string",
+                    "pattern": "^(?:|-?[_a-zA-Z]+[_a-zA-Z0-9-]*)$"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "outputLabel.md": {
+                    "type": "string",
+                    "title": "outputLabel.md",
+                    "description": "Label used for output"
+                  },
+                  "html": {
+                    "type": "string"
+                  }
+                },
+                "required": ["type"]
+              }
+            ]
+          }
+        }
+      },
+      "required": ["title", "body"]
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hideEmpty": {
+          "type": "boolean",
+          "description": "Hide labels from empty inputs"
+        },
+        "before.md": {
+          "type": "string",
+          "title": "before.md",
+          "description": "Prepend to issue body"
+        },
+        "after.md": {
+          "type": "string",
+          "title": "after.md",
+          "description": "Append to issue body"
+        }
+      }
+    }
+  },
+  "required": ["version", "input"]
+}

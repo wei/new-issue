@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IssueDirect - missing parameters should not render if owner or repo is missing or invalid 1`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`IssueDirect - missing parameters should not render if owner or repo is missing or invalid 2`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`IssueDirect - missing parameters should not render if owner or repo is missing or invalid 3`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`IssueDirect - missing parameters should not render if owner or repo is missing or invalid 4`] = `
+preact-render-spy (1 nodes)
+-------
+{null}
+
+`;
+
+exports[`IssueDirect should render and function correctly for developit/preact-cli 1`] = `
+preact-render-spy (1 nodes)
+-------
+<form
+  class="ni-form _ni-form"
+  onSubmit={[Function onSubmit]}
+>
+  <br />
+  <br />
+  <br />
+  <header class="ni-header _ni-header">
+    <Heading
+      config={
+        Object {
+          "owner": "developit",
+          "repo": "preact-cli"
+        }
+      }
+    >
+    </Heading>
+  </header>
+  <br />
+  <br />
+  <footer class="ni-footer _ni-footer text-center">
+    <Input
+      config={
+        Object {
+          "submit": "Submit New Issue on Github",
+          "type": "submit"
+        }
+      }
+    >
+    </Input>
+  </footer>
+  <br />
+</form>
+
+`;
+
+exports[`IssueDirect should render and function correctly for test/test-1 1`] = `
+preact-render-spy (1 nodes)
+-------
+<form
+  class="ni-form _ni-form"
+  onSubmit={[Function onSubmit]}
+>
+  <br />
+  <br />
+  <br />
+  <header class="ni-header _ni-header">
+    <Heading
+      config={
+        Object {
+          "owner": "test",
+          "repo": "test-1"
+        }
+      }
+    >
+    </Heading>
+  </header>
+  <br />
+  <br />
+  <footer class="ni-footer _ni-footer text-center">
+    <Input
+      config={
+        Object {
+          "submit": "Submit New Issue on Github",
+          "type": "submit"
+        }
+      }
+    >
+    </Input>
+  </footer>
+  <br />
+</form>
+
+`;

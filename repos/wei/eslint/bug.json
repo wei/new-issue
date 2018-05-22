@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "input": {
+    "title": [
+      {
+        "type": "html",
+        "html": "<p>ESLint adheres to the <a href='https://js.foundation/community/code-of-conduct' target='_blank'>JS Foundation Code of Conduct</a>.</p><p>This template is for bug reports. If you are here for another reason, please see below:</p><p>1. To propose a new rule: <a href='/wei/eslint/new-rule'>click here</a><br/>2. To request a rule change: <a href='/wei/eslint/rule-change'>click here</a><br/>3. To request a change that is not a bug fix, rule change, or new rule: <a href='/wei/eslint/change'>click here</a><br/>4. If you have any questions, please stop by our <a href='https://gitter.im/eslint/eslint' target='_blank'>chatroom</a>.</p><p>Note that leaving sections blank will make it difficult for us to troubleshoot and we may have to close the issue.</p>"
+      },
+      {
+        "type": "hidden",
+        "value": "[BUG_REPORT] "
+      },
+      {
+        "type": "text",
+        "required": true,
+        "class": "ni-block",
+        "label": "Title"
+      }
+    ],
+    "body": [
+      {
+        "type": "html",
+        "html": "<p><em>Tell us about your environment</em></p>",
+        "outputLabel.md": "**Tell us about your environment**\n\n"
+      },
+      {
+        "type": "text",
+        "label": "ESLint Version",
+        "outputLabel.md": "**ESLint Version:** "
+      },
+      {
+        "type": "text",
+        "label": "Node Version",
+        "outputLabel.md": "**Node Version:** "
+      },
+      {
+        "type": "text",
+        "label": "npm Version",
+        "outputLabel.md": "**npm Version:** "
+      },
+      {
+        "type": "text",
+        "label": "What parser (default, Babel-ESLint, etc.) are you using?"
+      },
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "Pleaes show your full configuration:",
+        "rows": 10,
+        "value": "<details>\n<summary>Configuration</summary>\n\n<!-- Paste your configuration below: -->\n```js\n\n```\n\n</details>"
+      },
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "What did you do? Please include the actual source code causing the issue, as well as the command that you used to run ESLint.",
+        "rows": 15,
+        "value": "<!-- Paste the source code below: -->\n```js\n\n```\n\n<!-- Paste the command you used to run ESLint: -->\n```bash\n\n```"
+      },
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "What did you expect to happen?",
+        "rows": 4
+      },
+      {
+        "type": "textarea",
+        "class": "ni-block",
+        "label": "What actually happened? Please include the actual, raw output from ESLint.",
+        "rows": 8
+      },
+      {
+        "type": "submit",
+        "submit": "Continue"
+      }
+    ]
+  },
+  "output": {
+    "hideEmpty": false
+  }
+}
