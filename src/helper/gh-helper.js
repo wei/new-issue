@@ -85,7 +85,7 @@ const buildIssueBody = (bodyOutputs = [], config) => {
   const bodyStrings = []
   const { output = {} } = config || {}
   const beforeMD = output['before.md'] || ''
-  const afterMD = output['after.md'] || '\n<!-- Created by wei/new-issue -->'
+  const afterMD = output['after.md'] || '\n\n<!-- Created using wei/new-issue -->'
 
   if (beforeMD) bodyStrings.push(beforeMD)
   bodyOutputs.forEach(({ label, value }) => {

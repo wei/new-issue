@@ -2,7 +2,8 @@
 
 exports[`gh-helper buildIssueBody should return built issue body 1`] = `
 "
-<!-- Created by wei/new-issue -->"
+
+<!-- Created using wei/new-issue -->"
 `;
 
 exports[`gh-helper buildIssueBody should return built issue body 2`] = `
@@ -10,7 +11,8 @@ exports[`gh-helper buildIssueBody should return built issue body 2`] = `
 value 1
 
 
-<!-- Created by wei/new-issue -->"
+
+<!-- Created using wei/new-issue -->"
 `;
 
 exports[`gh-helper buildIssueBody should return built issue body 3`] = `
@@ -21,7 +23,8 @@ label 2
 value 2
 
 
-<!-- Created by wei/new-issue -->"
+
+<!-- Created using wei/new-issue -->"
 `;
 
 exports[`gh-helper buildIssueBody should return built issue body 4`] = `
@@ -35,7 +38,8 @@ label 3
 value 3
 
 
-<!-- Created by wei/new-issue -->"
+
+<!-- Created using wei/new-issue -->"
 `;
 
 exports[`gh-helper buildIssueBody should return built issue body 5`] = `
@@ -46,7 +50,8 @@ label 2
 value 2
 
 
-<!-- Created by wei/new-issue -->"
+
+<!-- Created using wei/new-issue -->"
 `;
 
 exports[`gh-helper buildIssueBody should return built issue body 6`] = `
@@ -57,7 +62,8 @@ label 2
 value 2
 
 
-<!-- Created by wei/new-issue -->"
+
+<!-- Created using wei/new-issue -->"
 `;
 
 exports[`gh-helper buildIssueBody should return built issue body 7`] = `
@@ -67,7 +73,8 @@ label 2
 value 2
 
 
-<!-- Created by wei/new-issue -->"
+
+<!-- Created using wei/new-issue -->"
 `;
 
 exports[`gh-helper buildIssueBody should return built issue body 8`] = `
@@ -77,7 +84,8 @@ label 2
 value 2
 
 
-<!-- Created by wei/new-issue -->"
+
+<!-- Created using wei/new-issue -->"
 `;
 
 exports[`gh-helper buildIssueTitle should return built issue title 1`] = `"value 1"`;
