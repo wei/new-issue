@@ -32,9 +32,8 @@ export default class Main extends Component {
     if (!owner || !repo || !config) return null
 
     const { input = {} } = config
-    const { heading, title = [], body = [], submitText,
+    const { heading, title = [], body = [],
       customHeader, customFooter, customCSS, customJS } = input
-    const submitProvided = !!(title.find(c => c.type === 'submit') || body.find(c => c.type === 'submit'))
 
     return (
       <form class={classnames('ni-form', style['_ni-form'])} onSubmit={e => this.handleSubmit(e)}>
@@ -48,7 +47,6 @@ export default class Main extends Component {
         </section>
         <section class='ni-body-inputs'>
           { body.map((c, idx) => <Input ref={r => { this.bodyRefs[idx] = r }} config={c} />) }
-          { !submitProvided ? <Input config={{ type: 'submit', value: submitText }} /> : null }
         </section>
         { typeof customFooter === 'string' ? <footer class={classnames('ni-footer', style['_ni-footer'], 'ni-custom-footer')} dangerouslySetInnerHTML={{__html: customFooter}} /> : null }
         { typeof customCSS === 'string' ? <style class='ni-custom-css' dangerouslySetInnerHTML={{__html: customCSS}} /> : null }

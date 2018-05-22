@@ -217,16 +217,7 @@ preact-render-spy (1 nodes)
        />
     </div>
   </section>
-  <section class="ni-body-inputs">
-    <div class="ni-wrapper ni-wrapper-submit _ni-wrapper _ni-wrapper-submit">
-      <label class="ni-label _ni-label ni-empty-label"></label>
-      <button
-        type="submit"
-        class="ni-input ni-submit _ni-input _ni-submit"
-      >Submit
-      </button>
-    </div>
-  </section>
+  <section class="ni-body-inputs"></section>
   <footer class="ni-footer _ni-footer ni-custom-footer">
     <p>Custom Footer</p>
   </footer>
