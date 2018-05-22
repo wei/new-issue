@@ -2,6 +2,8 @@
     src="https://user-images.githubusercontent.com/5880908/40338322-715df6b0-5d42-11e8-8d32-d1c86e954785.png" />
 
 # New Issue
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwei%2Fnew-issue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwei%2Fnew-issue?ref=badge_shield)
+
 
 A fully customizable Github issues interface. Setup for your repo today!
 
@@ -57,6 +59,9 @@ _`:hash` can be commit hash or version number._
 
 [MIT](https://wei.mit-license.org)
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwei%2Fnew-issue.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwei%2Fnew-issue?ref=badge_large)
 
 ## Disclaimer
 
