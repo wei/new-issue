@@ -52,6 +52,21 @@ workflows:
   version: 2
   regular_flow:
     jobs:
-      - lint
-      - test
-      - build
+      - lint:
+          filters:
+            branches:
+              only:
+                - master
+                - /^feature-.*/
+      - test:
+          filters:
+            branches:
+              only:
+                - master
+                - /^feature-.*/
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+                - /^feature-.*/
