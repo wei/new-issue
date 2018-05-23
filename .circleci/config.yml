@@ -53,5 +53,17 @@ workflows:
   regular_flow:
     jobs:
       - lint
-      - test
-      - build
+      - test:
+          filters:
+            branches:
+              only:
+                - master
+                - /pull\/.*/
+                - /^feature-.*/
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+                - /pull\/.*/
+                - /^feature-.*/
