@@ -3,8 +3,10 @@
 
 # New Issue
 
-[![Build Status](https://travis-ci.org/wei/new-issue.svg?branch=master)](https://travis-ci.org/wei/new-issue)
+[![CircleCI](https://circleci.com/gh/wei/new-issue.svg?style=svg)](https://circleci.com/gh/wei/new-issue)
+[![TravisCI](https://travis-ci.com/wei/new-issue.svg?branch=master)](https://travis-ci.com/wei/new-issue)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwei%2Fnew-issue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwei%2Fnew-issue)
+[![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://wei.mit-license.org)
 [![Gitter](https://badges.gitter.im/wei/new-issue.svg)](https://gitter.im/wei/new-issue)
 
 A fully customizable Github issues interface. Setup for your repo today!
@@ -12,11 +14,11 @@ A fully customizable Github issues interface. Setup for your repo today!
 
 ## Introduction
 
-Frustrated with issues that don't include enough information? Tired of limitation of Github Issue templates? Worry no more, _new-issue_ is here to rescue!
+Frustrated with Github Issues that don't include enough information? Tired of limitations of Github Issue templates? Worry no more, _new-issue_ is here to rescue!
 
 Showcase (Feel free to try it out):
  - **Before:** https://github.com/wei/eslint/issues/new?template=BUG_REPORT.md
- - **After:** https://new-issue.org/wei/eslint/bug<br/>[<img width="50%" title="example new-issue" src="https://user-images.githubusercontent.com/5880908/40338438-008836ac-5d43-11e8-945c-24f477921a3a.png" />](https://new-issue.org/wei/eslint/bug)
+ - **After:** https://new-issue.org/wei/eslint<br/>[<img width="50%" title="example new-issue" src="https://user-images.githubusercontent.com/5880908/40338438-008836ac-5d43-11e8-945c-24f477921a3a.png" />](https://new-issue.org/wei/eslint)
 
 
 ## Get Started
