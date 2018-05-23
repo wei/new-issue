@@ -20,9 +20,9 @@ A fully customizable Github issues interface. Setup for your repo today!
 
 Frustrated with Github Issues that don't include enough information? Tired of limitations of Github Issue templates? Worry no more, _new-issue_ is here to rescue!
 
-Showcase (Feel free to try it out):
- - **Before:** https://github.com/wei/eslint/issues/new?template=BUG_REPORT.md
- - **After:** https://new-issue.org/wei/eslint<br/>[<img width="50%" title="example new-issue" src="https://user-images.githubusercontent.com/5880908/40338438-008836ac-5d43-11e8-945c-24f477921a3a.png" />](https://new-issue.org/wei/eslint)
+_Demo (Feel free to try it out):_
+ - **Without new-issue:** https://github.com/wei/eslint/issues/new?template=BUG_REPORT.md
+ - **With new-issue:** https://new-issue.org/wei/eslint<br/>[<img width="50%" title="example new-issue" src="https://user-images.githubusercontent.com/5880908/40338438-008836ac-5d43-11e8-945c-24f477921a3a.png" />](https://new-issue.org/wei/eslint)
 
 
 ## Get Started
