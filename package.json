@@ -1,7 +1,11 @@
 {
   "name": "new-issue",
   "version": "0.1.0",
+  "author": "Wei He <github@weispot.com>",
   "description": "A customizable Github issues interface",
+  "repository": "wei/new-issue",
+  "homepage": "https://github.com/wei/new-issue#readme",
+  "bugs": "https://github.com/eslint/eslint/issues/",
   "scripts": {
     "test": "NODE_ENV=test jest --verbose",
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
@@ -11,8 +15,6 @@
     "lint": "eslint ./*/ --ext .js,.json --ignore-path .gitignore",
     "lintfix": "eslint ./*/ --ext .js,.json --ignore-path .gitignore --fix || true"
   },
-  "author": "Wei He <github@weispot.com>",
-  "license": "MIT",
   "devDependencies": {
     "copy-webpack-plugin": "^4.5.1",
     "eslint": "^4.19.1",
@@ -100,5 +102,6 @@
         "always-multiline"
       ]
     }
-  }
+  },
+  "license": "MIT"
 }
