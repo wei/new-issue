@@ -1,14 +1,13 @@
-<img align="right" width="150" height="150" title="logo"
-    src="https://user-images.githubusercontent.com/5880908/40338322-715df6b0-5d42-11e8-8d32-d1c86e954785.png" />
+<img align="right" width="150" height="150" src="https://user-images.githubusercontent.com/5880908/40338322-715df6b0-5d42-11e8-8d32-d1c86e954785.png" />
 
 # New Issue
 
 [![TravisCI](https://img.shields.io/travis/wei/new-issue/master.svg?label=travis)](https://travis-ci.com/wei/new-issue)
 [![CircleCI](https://img.shields.io/circleci/project/github/wei/new-issue/master.svg?label=circle)](https://circleci.com/gh/wei/new-issue)
 [![Depfu](https://img.shields.io/depfu/wei/new-issue.svg)](https://depfu.com/github/wei/new-issue)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwei%2Fnew-issue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwei%2Fnew-issue)
 [![Gitter](https://badges.gitter.im/wei/new-issue.svg)](https://gitter.im/wei/new-issue)
 [![MIT License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://wei.mit-license.org)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwei%2Fnew-issue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwei%2Fnew-issue)
 <br/>
 ![Site Status](https://img.shields.io/uptimerobot/status/m780467987-304018deffeef2ec640802ad.svg?label=new-issue.org)
 ![Site Uptime](https://img.shields.io/uptimerobot/ratio/m780467987-304018deffeef2ec640802ad.svg)
