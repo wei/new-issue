@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "ajv": "^6.5.0",
-    "classnames": "^2.2.5",
+    "classnames": "^2.2.6",
     "linkstate": "^1.1.1",
     "netlify-auth-providers": "^1.0.0-alpha5",
     "normalize.css": "^8.0.0",
