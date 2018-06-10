@@ -40,7 +40,7 @@
     "sass-loader": "^7.0.3"
   },
   "dependencies": {
-    "ajv": "^6.5.0",
+    "ajv": "^6.5.1",
     "classnames": "^2.2.6",
     "linkstate": "^1.1.1",
     "netlify-auth-providers": "^1.0.0-alpha5",
