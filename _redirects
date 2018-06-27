@@ -1,0 +1,4 @@
+/  https://github.com/wei/new-issue#readme  302
+/:owner/:repo/:type  /index.html  200
+/:owner/:repo  /index.html  200
+/*  https://github.com/wei/new-issue#readme  302
