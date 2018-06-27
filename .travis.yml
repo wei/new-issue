@@ -14,3 +14,12 @@ branches:
   only:
     - master
     - /^feature-.*/
+deploy:
+  provider: pages
+  local-dir: build
+  fqdn: new-issue.org
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
