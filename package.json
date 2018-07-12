@@ -12,12 +12,12 @@
     "build": "preact build --no-prerender --clean --template src/index.ejs --service-worker false",
     "serve": "npm run build && preact serve",
     "dev": "preact watch --template src/index.ejs",
-    "lint": "eslint ./*/ --ext .js,.json --ignore-path .gitignore",
-    "lintfix": "eslint ./*/ --ext .js,.json --ignore-path .gitignore --fix || true"
+    "lint": "eslint . --ext .js,.json --ignore-path .gitignore",
+    "lintfix": "eslint . --ext .js,.json --ignore-path .gitignore --fix || true"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.5.2",
-    "eslint": "^4.19.1",
+    "eslint": "^5.1.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-preact": "^1.1.6",
     "eslint-plugin-import": "^2.13.0",
