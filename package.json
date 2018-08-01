@@ -46,7 +46,7 @@
     "netlify-auth-providers": "^1.0.0-alpha5",
     "normalize.css": "^8.0.0",
     "preact": "^8.2.9",
-    "preact-compat": "^3.18.0",
+    "preact-compat": "^3.18.1",
     "preact-habitat": "^3.2.2",
     "preact-router": "^2.6.1",
     "primer": "^10.8.0",
