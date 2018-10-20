@@ -16,7 +16,7 @@
     "lintfix": "eslint . --ext .js,.json --ignore-path .gitignore --fix || true"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^4.5.3",
+    "copy-webpack-plugin": "^4.5.4",
     "eslint": "^5.6.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-preact": "^1.1.6",
