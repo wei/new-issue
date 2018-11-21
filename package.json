@@ -49,7 +49,7 @@
     "preact-compat": "^3.18.4",
     "preact-habitat": "^3.2.2",
     "preact-router": "^2.6.1",
-    "primer": "^10.8.1",
+    "primer": "^10.10.0",
     "whatwg-fetch": "^3.0.0"
   },
   "jest": {
