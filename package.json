@@ -30,7 +30,7 @@
     "identity-obj-proxy": "^3.0.0",
     "if-env": "^1.0.4",
     "jest": "^23.6.0",
-    "jest-localstorage-mock": "^2.2.0",
+    "jest-localstorage-mock": "^2.4.0",
     "jsdom": "^11.11.0",
     "node-sass": "^4.9.3",
     "preact-cli": "^2.2.1",
