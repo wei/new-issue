@@ -10,7 +10,7 @@ export default class Input extends Component {
 
   getLabel () {
     const labelText = (this.props.config && this.props.config.label) || ''
-    return <label class={classnames('ni-label', style['_ni-label'], {'ni-empty-label': !labelText})}>{labelText}</label>
+    return <label class={classnames('ni-label', style['_ni-label'], { 'ni-empty-label': !labelText })}>{labelText}</label>
   }
 
   getInput () {
@@ -55,12 +55,12 @@ export default class Input extends Component {
       case 'submit': {
         const { submit, disabled } = config
         return <button type={type} name={name} id={id} class={classnames('ni-input', `ni-${type}`, style[`_ni-input`], style[`_ni-${type}`], className)}
-          title={title} disabled={disabled} dangerouslySetInnerHTML={{__html: submit || 'Submit'}} />
+          title={title} disabled={disabled} dangerouslySetInnerHTML={{ __html: submit || 'Submit' }} />
       }
       case 'html': {
         const { html } = config
         return <div id={id} class={classnames('ni-input', `ni-${type}`, style[`_ni-input`], style[`_ni-${type}`], className)} title={title}
-          dangerouslySetInnerHTML={{__html: html}} />
+          dangerouslySetInnerHTML={{ __html: html }} />
       }
       default: {
         return null

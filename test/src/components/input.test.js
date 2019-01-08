@@ -346,7 +346,7 @@ describe(`Input - input type: submit`, () => {
         expect(buttonField.attr('disabled')).toBeFalsy()
       }
       // TODO Test html after rendering
-      expect(buttonField.attr('dangerouslySetInnerHTML')).toEqual({__html: config.submit || 'Submit'})
+      expect(buttonField.attr('dangerouslySetInnerHTML')).toEqual({ __html: config.submit || 'Submit' })
       expect(context).toMatchSnapshot()
       expect(context.component().output())
         .toEqual({
@@ -393,7 +393,7 @@ describe(`Input - input type: html`, () => {
       }
       expect(htmlField.attr('title')).toBe(config.title)
       // TODO Test html after rendering
-      expect(htmlField.attr('dangerouslySetInnerHTML')).toEqual({__html: config.html})
+      expect(htmlField.attr('dangerouslySetInnerHTML')).toEqual({ __html: config.html })
       expect(context).toMatchSnapshot()
       expect(context.component().output())
         .toEqual({

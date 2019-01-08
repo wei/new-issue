@@ -38,7 +38,7 @@ describe('IssueDirect', () => {
       const context = shallow(<IssueDirect owner={owner} repo={repo} config={config} />)
       expect(context).toMatchSnapshot()
       const preventDefault = jest.fn()
-      context.component().handleSubmit({preventDefault: preventDefault})
+      context.component().handleSubmit({ preventDefault: preventDefault })
       expect(preventDefault).toBeCalled()
       expect(window.location.assign).toBeCalledWith(`${getGithubIssuesUrl(owner, repo)}`)
     })

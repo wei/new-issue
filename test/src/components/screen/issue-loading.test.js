@@ -34,7 +34,7 @@ describe('IssueLoading', () => {
       const context1 = shallow(<IssueLoading owner={owner} repo={repo} loading handleLogin={handleLogin1} config={config} />)
       expect(context1).toMatchSnapshot()
       const preventDefault = jest.fn()
-      context1.component().handleSubmit({preventDefault: preventDefault})
+      context1.component().handleSubmit({ preventDefault: preventDefault })
       expect(preventDefault).toBeCalled()
       expect(handleLogin1).toBeCalled()
 

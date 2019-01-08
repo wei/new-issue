@@ -6,11 +6,11 @@ describe('validate new-issue json schema', () => {
   it('should not pass validation if json is invalid', () => {
     expect(validateSchema()).toBe(false)
     expect(validateSchema({})).toBe(false)
-    expect(validateSchema({no_version: true})).toBe(false)
+    expect(validateSchema({ no_version: true })).toBe(false)
     expect(validateSchema('')).toBe(false)
     expect(validateSchema(123)).toBe(false)
-    expect(validateSchema({version: 'x.x'})).toBe(false)
-    expect(validateSchema({version: '1.0'})).toBe(false)
+    expect(validateSchema({ version: 'x.x' })).toBe(false)
+    expect(validateSchema({ version: '1.0' })).toBe(false)
   })
 
   test('example jsons should pass validation', () => {

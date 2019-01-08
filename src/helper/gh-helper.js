@@ -33,7 +33,7 @@ const setLocalAccessToken = (token = '') => {
 const triggerLogin = () => {
   return new Promise((resolve, reject) => {
     new Authenticator({ site_id: window.location.host.match(/localhost/i) && 'new-issue.org' })
-      .authenticate({provider: 'github', scope: 'public_repo'},
+      .authenticate({ provider: 'github', scope: 'public_repo' },
         (err, data) => {
           if (err) return reject(err)
           setLocalAccessToken(data.token)

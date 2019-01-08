@@ -10,7 +10,7 @@ export default class Heading extends Component {
     if (!owner || !repo) return null
 
     return heading
-      ? <h1 class={classnames('ni-heading', style['_ni-heading'])} dangerouslySetInnerHTML={{__html: heading}} />
+      ? <h1 class={classnames('ni-heading', style['_ni-heading'])} dangerouslySetInnerHTML={{ __html: heading }} />
       : <h1 class={classnames('ni-heading', style['_ni-heading'])}>
         <a class={classnames('ni-repo-link', style['_ni-repo-link'])} href={getGithubUrl(owner)} target='_blank'>{owner}</a>
         <span>/</span>
