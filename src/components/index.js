@@ -21,10 +21,10 @@ export default class Index extends Component {
   fetchUserInfo () {
     getUserInfo()
       .then(user => {
-        this.setState({githubUser: user})
+        this.setState({ githubUser: user })
       })
       .catch(() => {
-        this.setState({githubUser: false})
+        this.setState({ githubUser: false })
       })
   }
 

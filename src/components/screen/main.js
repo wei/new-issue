@@ -38,7 +38,7 @@ export default class Main extends Component {
     return (
       <form class={classnames('ni-form', style['_ni-form'])} onSubmit={e => this.handleSubmit(e)}>
         { typeof customHeader === 'string'
-          ? <header class={classnames('ni-header', style['_ni-header'], 'ni-custom-header')} dangerouslySetInnerHTML={{__html: customHeader}} />
+          ? <header class={classnames('ni-header', style['_ni-header'], 'ni-custom-header')} dangerouslySetInnerHTML={{ __html: customHeader }} />
           : <header class={classnames('ni-header', style['_ni-header'])}>
             <Heading config={Object.assign({ owner, repo }, { heading: heading })} />
           </header> }
@@ -48,9 +48,9 @@ export default class Main extends Component {
         <section class='ni-body-inputs'>
           { body.map((c, idx) => <Input ref={r => { this.bodyRefs[idx] = r }} config={c} />) }
         </section>
-        { typeof customFooter === 'string' ? <footer class={classnames('ni-footer', style['_ni-footer'], 'ni-custom-footer')} dangerouslySetInnerHTML={{__html: customFooter}} /> : null }
-        { typeof customCSS === 'string' ? <style class='ni-custom-css' dangerouslySetInnerHTML={{__html: customCSS}} /> : null }
-        { typeof customJS === 'string' ? <script class='ni-custom-js' dangerouslySetInnerHTML={{__html: customJS}} /> : null }
+        { typeof customFooter === 'string' ? <footer class={classnames('ni-footer', style['_ni-footer'], 'ni-custom-footer')} dangerouslySetInnerHTML={{ __html: customFooter }} /> : null }
+        { typeof customCSS === 'string' ? <style class='ni-custom-css' dangerouslySetInnerHTML={{ __html: customCSS }} /> : null }
+        { typeof customJS === 'string' ? <script class='ni-custom-js' dangerouslySetInnerHTML={{ __html: customJS }} /> : null }
       </form>
     )
   }

@@ -11,8 +11,8 @@ describe('Heading', () => {
       undefined,
       null,
       {},
-      {owner: 'test'},
-      {repo: 'test'},
+      { owner: 'test' },
+      { repo: 'test' },
     ].forEach(config => {
       const context = shallow(<Heading config={config} />)
 

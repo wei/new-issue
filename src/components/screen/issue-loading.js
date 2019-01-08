@@ -23,7 +23,7 @@ export default class IssueLoading extends Component {
       </header>
       <br /><br />
       <footer class={classnames('ni-footer', style['_ni-footer'], 'text-center')}>
-        <Input config={{type: 'submit', submit: props.loading ? 'Loading...' : 'New Issue', disabled: props.loading}} />
+        <Input config={{ type: 'submit', submit: props.loading ? 'Loading...' : 'New Issue', disabled: props.loading }} />
       </footer>
       <br />
     </form>

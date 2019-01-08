@@ -27,7 +27,7 @@ export default class IssueDirect extends Component {
       </header>
       <br /><br />
       <footer class={classnames('ni-footer', style['_ni-footer'], 'text-center')}>
-        <Input config={{type: 'submit', submit: 'Submit New Issue on Github'}} />
+        <Input config={{ type: 'submit', submit: 'Submit New Issue on Github' }} />
       </footer>
       <br />
     </form>

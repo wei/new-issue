@@ -40,7 +40,7 @@ describe('Main', () => {
       expect(context).toMatchSnapshot()
 
       const preventDefault = jest.fn()
-      context.component().handleSubmit({preventDefault: preventDefault})
+      context.component().handleSubmit({ preventDefault: preventDefault })
       expect(preventDefault).toBeCalled()
     })
   })
