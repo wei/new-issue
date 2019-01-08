@@ -45,7 +45,7 @@
     "linkstate": "^1.1.1",
     "netlify-auth-providers": "^1.0.0-alpha5",
     "normalize.css": "^8.0.1",
-    "preact": "^8.3.1",
+    "preact": "^8.4.2",
     "preact-compat": "^3.18.4",
     "preact-habitat": "^3.2.2",
     "preact-router": "^2.6.1",
