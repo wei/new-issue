@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.6.0",
-    "eslint": "^5.15.1",
+    "eslint": "^6.0.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-preact": "^1.1.6",
     "eslint-plugin-import": "^2.16.0",
